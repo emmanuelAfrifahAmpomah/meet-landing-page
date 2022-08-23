@@ -1,0 +1,154 @@
+/*body*/
+body {
+    background-color: rgb(250, 250, 250), hsl(0, 0%, 98%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*main*/
+main {
+}
+
+#scalar {
+    display: flex;
+    justify-content: center;
+}
+
+.bodytext {
+    text-align: center;
+}
+
+.number {
+    /*display: flex;
+    justify-content: center;*/
+    text-align: center;
+}
+
+/*.numbers {
+    background-color: rgb(192, 192, 187);
+    border-style: hidden;
+    border-radius: 50%;
+    border-color: inherit;
+    height: 28px;
+    width: 28px;
+    font-size: small;
+}*/
+
+/*header*/
+#headerstyle {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+#headerul {
+    text-align: center;
+    list-style-type: none;
+}
+
+#firstimgs {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgmargin {
+    margin-right: 10px;
+    border-style: hidden;
+    border-radius: .5em;
+}
+
+#heroLeft {
+    margin-right: 10em;
+}
+
+#heroRight {
+    margin-left: 10em;
+}
+
+/*buttons*/
+#firstDownload {
+    color: rgb(250, 250, 250);
+    background-color: rgb(77, 150, 168);
+    border-style: hidden;
+    border-radius: 2em;
+    border-color: inherit;
+    width: 8.5em;
+    height: 2.2em;
+}
+
+.diff1 {
+    color: rgb(143, 227, 249);
+}
+
+.whatBut {
+    color: rgb(250, 250, 250);
+    background-color: rgb(133, 95, 177);
+    border-style: hidden;
+    border-radius: 2em;
+    border-color: inherit;
+    width: 8.5em;
+    height: 2.2em;
+}
+
+#footbutton {
+    margin: 0em 8em;
+}
+
+/*Hover states*/
+.whatBut:hover {
+    background-color:rgb(217, 184, 255);
+}
+
+#firstDownload:hover {
+    background-color: rgb(143, 227, 249);
+}
+
+#dif {
+    color: rgb(77, 150, 168);
+}
+
+.diff2 {
+    color: rgb(217, 184, 255);
+}
+
+/*footer*/
+#footpic {
+    /*margin: 5% auto;
+    background-origin: border-box;
+    background-size: cover;*/
+    background-color: rgb(77, 150, 168) /*hsla(192, 37%, 48%, .7)*/;
+    position: relative;
+}
+
+.footText  {
+    color: rgb(250, 250, 250);
+    text-align: left;
+    border: 2px hidden;
+    margin-left: 8em;
+}
+
+#footdiv {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.footdiv1 {
+    z-index: 9;
+}*/
+
+#footImage {
+    position: inherit;
+    /*top: 0;
+    left: 0;*/
+    opacity: 0.2;
+}
