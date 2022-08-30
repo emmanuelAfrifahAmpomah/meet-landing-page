@@ -5,8 +5,6 @@ body {
 }
 
 /*main*/
-main {
-}
 
 #scalar {
     display: flex;
@@ -15,6 +13,11 @@ main {
 
 .bodytext {
     text-align: center;
+    margin-left: -4;
+}
+
+#bodyul {
+    list-style-type: none;
 }
 
 .number {
@@ -37,11 +40,23 @@ main {
 #headerstyle {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /*justify-content: center;*/
     align-items: center;
     margin-top: 3em;
     margin-bottom: 5em;
+}
+
+#heroLeft {
+    order: -1;
+    flex: 1 1 auto;
+    margin-right: 3em;
+}
+
+#heroRight {
+    order: 1;
+    flex: 1 1 auto;
+    margin-left: 3em;
 }
 
 #headerul {
@@ -65,13 +80,6 @@ main {
     border-radius: .3em;
 }
 
-#heroLeft {
-    margin-right: 3em;
-}
-
-#heroRight {
-    margin-left: 3em;
-}
 
 /*buttons*/
 #firstDownload {
@@ -168,25 +176,50 @@ main {
 /*Mobile first*/
 @media only screen and (max-width: 600px) {
     body {
-    background-color: rgb(241, 241, 248);
+    background-color: rgb(234, 241, 241);
+    }
+
+    #headerstyle {
+        display: grid;
+        grid-template-columns: 230px 200px;
     }
 
     .headerpics {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        /*justify-content: flex-start;*/
     }
 
     #heroLeft {
-        flex: 0 1 auto; 
         order: -2;
-        margin-left: -1em;
+        margin-left: -1.2em;
     }
 
     #heroRight {
-        flex: 0 1 auto;
         order: -1;
-        margin-left: -4.55em;
+        margin-left: -2.5em;
+    }
+
+    #headerul {
+        margin-left: 4em;
+    }
+
+    #footdiv {
+        top: -8%;
+    }
+
+    #footText1 {
+        font-size: .5;
+        text-align: center;
+    }
+
+    #footText2 {
+        font-size: .8em;
+        text-align: center;
+    }
+
+    #footbutton {
+        margin-left: 9.2em;
     }
 }
