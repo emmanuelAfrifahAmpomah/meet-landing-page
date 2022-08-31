@@ -14,6 +14,7 @@ body {
 .bodytext {
     text-align: center;
     margin-left: -4;
+    margin-bottom: 9em;
 }
 
 #bodyul {
@@ -23,18 +24,24 @@ body {
 .number {
     /*display: flex;
     justify-content: center;*/
-    text-align: center;
+
 }
 
-/*.numbers {
-    background-color: rgb(192, 192, 187);
-    border-style: hidden;
+.numbers {
+    background-color: rgb(233, 233, 232);
+    position: relative;
+    bottom: .4em;
+    right: 1em;
+    text-align: center;
+    border-style: inset;
     border-radius: 50%;
-    border-color: inherit;
+    border-color:  rgb(248, 246, 246);
     height: 28px;
     width: 28px;
     font-size: small;
-}*/
+    margin: auto;
+    margin-bottom: 0em;
+}
 
 /*header*/
 #headerstyle {
@@ -44,7 +51,7 @@ body {
     /*justify-content: center;*/
     align-items: center;
     margin-top: 3em;
-    margin-bottom: 5em;
+    margin-bottom: 9em;
 }
 
 #heroLeft {
@@ -136,6 +143,7 @@ body {
     position: relative;
     max-width: 100%;
     max-height: 100%;
+    z-index: 0;
 }
 
 .footText  {
@@ -156,6 +164,7 @@ body {
     height: auto;
     position: absolute;
     top: 35%;
+    margin-left: 3em;
     max-width: 100%;
     right: inherit;
 }
@@ -181,7 +190,7 @@ body {
 
     #headerstyle {
         display: grid;
-        grid-template-columns: 230px 200px;
+        grid-template-columns: 230px auto;
     }
 
     .headerpics {
@@ -207,6 +216,7 @@ body {
 
     #footdiv {
         top: -8%;
+        margin: auto;
     }
 
     #footText1 {
