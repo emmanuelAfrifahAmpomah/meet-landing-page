@@ -183,7 +183,7 @@ p {
     height: auto;
     position: absolute;
     top: 35%;
-    margin-left: 8em;
+    margin: auto;
     max-width: 100%;
     right: inherit;
 }
@@ -269,8 +269,13 @@ p {
 }
 
 /*Tablet Responsiveness*/
-@media only screen and (min-width: 600px) {
-    .footText {
+@media only screen and (min-width: 601px) {
+    #footdiv {
+        margin: auto;
+    }
+    
+    
+    /*.footText {
         margin-left: -4.5em;
     }
 
@@ -278,7 +283,7 @@ p {
         margin-left: -1.5em;
     }*/
 
-    #footbutton {
+    /*#footbutton {
         margin-left: -5em;
     }
-}
+}*/
