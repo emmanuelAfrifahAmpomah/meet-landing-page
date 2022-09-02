@@ -4,6 +4,21 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 64px;
+}
+
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 40px;
+}
+
+p {
+    font-family: 'Red Hat Display', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 18px;
+}
+
 /*main*/
 
 #scalar {
@@ -74,9 +89,10 @@ body {
 
 #firstimgs {
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
+    flex: 0 1 auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -128,6 +144,9 @@ body {
 
 #dif {
     color: rgb(77, 150, 168);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 22;
+    letter-spacing: 4px;
 }
 
 .diff2 {
@@ -184,13 +203,9 @@ body {
 
 /*Mobile first*/
 @media only screen and (max-width: 600px) {
-    body {
-    background-color: rgb(234, 241, 241);
-    }
-
     #headerstyle {
         display: grid;
-        grid-template-columns: 230px auto;
+        grid-template-columns: 230px 200px;
     }
 
     .headerpics {
@@ -232,4 +247,30 @@ body {
     #footbutton {
         margin-left: 9.2em;
     }
+
+    #firstimgs {
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 200px;
+        grid-gap: 10px;
+    }
+
+    #firstDownload {
+        margin-bottom: 5px;
+    }
+}
+
+/*Tablet Responsiveness*/
+@media only screen and (min-width: 600px) {
+    .footText {
+        margin-left: -1em;
+    }
+
+    #footText2 {
+        margin-right: -1.5em;
+    }
+
+    /*#footbutton {
+        margin-: 0em;
+    }*/
 }
