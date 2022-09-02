@@ -183,7 +183,7 @@ p {
     height: auto;
     position: absolute;
     top: 35%;
-    margin-left: 3em;
+    margin-left: 8em;
     max-width: 100%;
     right: inherit;
 }
@@ -245,7 +245,15 @@ p {
     }
 
     #footbutton {
-        margin-left: 9.2em;
+        margin-left: 10.1em;
+    }
+
+    #footText1 {
+        margin-left: 3.7em;
+    }
+
+    #footText2 {
+        margin-left: 5.7em;
     }
 
     #firstimgs {
@@ -263,14 +271,14 @@ p {
 /*Tablet Responsiveness*/
 @media only screen and (min-width: 600px) {
     .footText {
-        margin-left: -1em;
+        margin-left: -4.5em;
     }
 
-    #footText2 {
-        margin-right: -1.5em;
-    }
-
-    /*#footbutton {
-        margin-: 0em;
+    /*#footText2 {
+        margin-left: -1.5em;
     }*/
+
+    #footbutton {
+        margin-left: -5em;
+    }
 }
