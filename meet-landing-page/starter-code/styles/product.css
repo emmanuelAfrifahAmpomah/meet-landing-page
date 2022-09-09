@@ -317,6 +317,14 @@ button {
 
 /*Mobile with maximum width of 390px*/
 @media only screen and (max-width: 390px) {
+    .headerpics {
+        width:190px;
+    }
+
+    #heroRight {
+        margin-left: -3em;
+    }
+
     #footText1 {
         margin-left: 3em;
         margin-bottom: .5em;
@@ -336,7 +344,7 @@ button {
     }
 
     #headerul {
-        margin-left: 3.5em;
+        margin-left: 3.99em;
     }
 }
 
