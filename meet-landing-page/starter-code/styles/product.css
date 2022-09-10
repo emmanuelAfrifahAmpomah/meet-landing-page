@@ -151,6 +151,10 @@ button {
     height: 2.2em;
 }
 
+#makeButSmaller {
+    width: 6em;
+}
+
 #footbutton {
     margin: auto;
 }
