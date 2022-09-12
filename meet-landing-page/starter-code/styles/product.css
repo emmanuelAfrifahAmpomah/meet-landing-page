@@ -231,7 +231,7 @@ button {
 
 
 /*Mobile first*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px)  {
     /*main {
         margin-left: 3em;
         margin-right: 1em;
@@ -248,6 +248,7 @@ button {
     }
 
     .headerpics {
+        width: 150px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -266,8 +267,8 @@ button {
     }
 
     #headerul {
-        margin-left: 5.3em;
-        text-align: center;
+        position: relative;
+        right: -30%;
     }
 
     #footdiv {
@@ -291,7 +292,7 @@ button {
     }
 
     #footText1 {
-        margin-left: 3.7em;
+        margin-left: 4.2em;
         margin-bottom: 0em;
     }
 
@@ -318,11 +319,22 @@ button {
     }
 }
 
+/*mobile wuth wider screen*/
+@media only screen and (min-width: 410px) {
+    .headerpics {
+        width:200px;
+    }
+
+    #heroRight {
+        margin-left: -1.7em;
+        margin-left: -1em;
+    }
+}
 
 /*Mobile with maximum width of 390px*/
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 400px) {
     .headerpics {
-        width:190px;
+        width:180px;
     }
 
     #heroRight {
@@ -348,7 +360,8 @@ button {
     }
 
     #headerul {
-        margin-left: 3.99em;
+        position: relative;
+        left: 24%;
     }
 }
 
@@ -356,22 +369,43 @@ button {
 
 /*Tablet Responsiveness*/
 @media only screen and (min-device-width: 601px) and (max-device-width: 860px) {
-    #footdiv {
-        margin: auto;
-    }
-
     .imgmargin {
         max-width: 170px;
         max-height: 170px;
     }
     
-    
+    #headerul {
+        position: relative;
+        left: -6%;
+    }
+
     .footText {
         margin-left: 1em;
+        text-align: center;
     }
 
     .lineOne {
         opacity: .2;
+    }
+
+    #footdiv {
+        display: flex;
+        flex-direction: column;
+        top: 10%;
+    }
+
+    #footText1 {
+        margin: auto;
+        margin-bottom: .5em;
+    }
+    #footText2 {
+        margin: auto;
+        margin-top: 0em;
+    }
+
+    #footbutton {
+        margin: auto;
+        margin-top: 1em;
     }
 
     /*#footText2 {
