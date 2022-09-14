@@ -134,12 +134,16 @@ p {
     order: -1;
     flex: 0 1 auto;
     margin-left: -1.5em;
+    width: 200px;
+    height: 200px;
 }
 
 #heroRight {
     order: 1;
     flex: 0 1 auto;
     margin-right: -.5em;
+    width: 200px;
+    height: 200px;
 }
 
 #headerul {
@@ -480,7 +484,14 @@ button {
     }
 
     #heroRight {
-        margin-left: -2em;
+        width: 185px;
+        height: 185px;
+        margin-left: -2.5em;
+    }
+
+    #heroLeft {
+        width: 185px;
+        height: 185px;
     }
 
     #headerul {
@@ -493,7 +504,7 @@ button {
     }
 
     #footbutton {
-        margin-left: 9em;
+        margin-left: 9.5em;
     }
 }
 
@@ -523,10 +534,6 @@ button {
         margin-left: -2.3em;
     }
 
-    .headerpics {
-        width:180px;
-    }
-
     .bodyh2 {
         font-size: 32px;
         line-height: 36px;
@@ -535,7 +542,14 @@ button {
     }
 
     #heroRight {
+        width: 180px;
+        height: 180px;
         margin-left: -3em;
+    }
+
+    #heroLeft {
+        width: 180px;
+        height: 180px;
     }
 
 
@@ -553,8 +567,8 @@ button {
     }
 
     #footdiv {
-        top: 20%;
-        left: -1%;
+        top: 18%;
+        left: -3%;
         margin: auto;
     }
 
