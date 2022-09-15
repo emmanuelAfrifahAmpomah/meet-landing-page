@@ -267,14 +267,16 @@ button {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 35%;
+    top: 30%;
     margin: auto;
     max-width: 100%;
-    right: 3%;
+    right: 6%;
 }
 
 #footText1 {
-    font-size: 1.8em;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
 }
 
 /*.footdiv1 {
@@ -289,7 +291,6 @@ button {
     max-width: 100%;
     max-height: 100%;
 }
-
 
 
 
@@ -326,52 +327,46 @@ button {
     }
 
     #headerstyle {
-        display: grid;
-        grid-template-columns: 218px 180px;
-    }
-
-    .headerpics {
-        width: 150px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        flex: 0 1 auto;
-        /*justify-content: flex-start;*/
+        flex-direction: column;
     }
 
     #heroLeft {
         order: -2;
         margin-left: -1.2em;
+        width: 0px;
+        height: 0px;
     }
 
     #heroRight {
         order: -1;
-        margin-left: -2.2em;
+        width: 408px;
+        height: 200px;
+        margin-bottom: 0em;
     }
 
     #headerul {
-        margin: auto;
-        margin-left: -.5em;
+        margin-left: -3em;
     }
 
     .groupchat {
-        margin-left: -.1em;
+        margin-left: .7em;
     }
 
     .headerp {
         font-size: 16px;
         line-height: 26px;
-        margin-left: 1em;
+        padding: 0em 2em;
     }
 
     #firstDownload {
         position: relative;
-        left: 50px;
+        left: 40px;
     }
 
     #makeButSmaller {
         position: relative;
-        left: -50px;
+        left: -62px;
         top: 43px;
     }
 
@@ -448,6 +443,61 @@ button {
     }
 }
 
+/*mobile with wider screen like surface pro*/
+@media only screen and (min-width: 500px) and (max-device-width: 599px) {
+    body {
+        margin: 0em ;
+    }
+
+    #scalar {
+        left: 196.72px;
+        top: 10.2px;
+    }
+
+    .groupchat {
+        left: 90px;
+        top: 10px;
+    }
+
+    #headerstyle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #heroLeft {
+        order: -2;
+        margin-left: -1.2em;
+        width: 0px;
+        height: 0px;
+    }
+
+    #heroRight {
+        order: -1;
+        margin-left: -1.7em;
+        width:570px;
+        margin-left: -2em;
+    }
+
+    .groupchat {
+        margin-left: .5em;
+    }
+
+    #firstDownload {
+        position: relative;
+        left: 48px;
+    }
+
+    #makeButSmaller {
+        position: relative;
+        left: -51px;
+        top: 43px;
+    }
+
+    #footbutton {
+        margin-left: 16em;
+    }
+}
+
 /*mobile with wider screen minimum width of 405px*/
 @media only screen and (min-width: 405px) and (max-device-width: 415px) {
     .headerpics {
@@ -456,47 +506,163 @@ button {
 
     #heroRight {
         margin-left: -1.7em;
-        margin-left: -1em;
+        width:430px;
+        height: 140px;
+        margin-left: -2em;
     }
 }
 
 /*mobile with wider screen minimum width of 416px and maximum of 437*/
-@media only screen and (min-width: 416px) and (max-device-width: 437px) {
-    .headerpics {
-        width:207px;
-    }
+@media only screen and (min-width: 416px) and (max-device-width: 439px) {
 
     #heroRight {
         margin-left: -0.4em;
+        width:450px;
+        height: 150px;
+        margin-left: -2em;
     }
+
+    #makeButSmaller {
+        left: -60px;
+    }
+
     .bodydif {
         padding: 0em 3em;
     }
+
     #footbutton {
         margin-left: 11.3em;
     }
 }
 
-/*Mobile with minimum width of 370px maximum of 390px*/
-@media only screen and (min-device-width: 370px) and (max-device-width: 388px) {
-    .headerpics {
-        width: 180px;
-    }
-
-    #heroRight {
-        width: 185px;
-        height: 185px;
-        margin-left: -2.5em;
-    }
-
-    #heroLeft {
-        width: 185px;
-        height: 185px;
+@media only screen and (min-width: 440px) and (max-device-width: 490px) {
+    #scalar {
+        margin: 1em 0em;
+        position: relative;
+        width: 80px;
+        height: 24px;
+        left: 186.72px;
+        top: 10.2px;
     }
 
     #headerul {
         margin: auto;
-        margin-left: -2em;
+        margin-left: -2.6em;
+    }
+
+    #heroRight {
+        order: -2;
+        width: 498px;
+        height: 170px;
+        margin-left: -1em;
+    }
+
+    #heroLeft {
+        order: -2;
+        width: 0px;
+        height: 0px;
+    }
+
+    .groupchat {
+        margin-left: 2em;
+    }
+
+    .headerp {
+        padding: 0em 4em;
+    }
+
+    #footbutton {
+        margin-left: 14em;
+    }
+}
+
+/*Minimum device width of 390 and maximum of 400px*/
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 400px) {
+    #headerul {
+        margin: auto;
+        margin-left: -1.7em;
+    }
+
+    .bodyh2 {
+        padding: 0em 1em;
+    }
+
+    #footbutton {
+        margin-left: 9.8em;
+    }
+
+    #heroRight {
+        order: -1;
+        width: 400px;
+        height: 140px;
+        margin-bottom: 0em;
+        margin-left: -1.5em;
+    }
+
+    .groupchat {
+        margin-left: .3em;
+    }
+
+    #headerul {
+        margin-left: -2.5em;
+    }
+}
+
+/*Mobile with minimum width of 370px maximum of 390px*/
+@media only screen and (min-device-width: 370px) and (max-device-width: 388px) {
+    .groupchat {
+        position: relative;
+        width: 327px;
+        height: 88px;
+        left: 10px;
+        top: 10px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+        color: #28283D;
+    }
+
+    #headerstyle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #heroLeft {
+        order: -2;
+        margin-left: -1.2em;
+        width: 0px;
+        height: 0px;
+    }
+
+    #heroRight {
+        order: -1;
+        width: 400px;
+        height: 150px;
+        margin-bottom: 0em;
+        margin-right: 1.5em;
+    }
+
+    #makeButSmaller {
+        position: relative;
+        left: -61px;
+        top: 43px;
+    }
+
+    #headerul {
+        margin-left: -3em;
+    }
+
+    .groupchat {
+        margin-left: .3em;
+    }
+
+    .headerp {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0em 2em;
     }
 
     .bodyh2 {
@@ -508,30 +674,16 @@ button {
     }
 }
 
-/*Minimum device width of 390 and maximum of 400px*/
-
-@media only screen and (min-device-width: 390px) and (max-device-width: 400px) {
-    .headerpics {
-        width: 195px;
-    }
-    #headerul {
-        margin: auto;
-        margin-left: -1.7em;
-    }
-    .bodyh2 {
-        padding: 0em 1em;
-    }
-    #footbutton {
-        margin-left: 9.8em;
-    }
-}
-
 /*Mobile with maximum width of 360px*/
 @media only screen and (max-width: 360px) {
+    #headerstyle {
+        display: flex;
+        flex-direction: column;
+    }
 
     #headerul {
         margin: auto;
-        margin-left: -2.3em;
+        margin-left: -3em;
     }
 
     .bodyh2 {
@@ -541,17 +693,26 @@ button {
         padding: 1.1em;
     }
 
-    #heroRight {
-        width: 180px;
-        height: 180px;
-        margin-left: -3em;
-    }
-
     #heroLeft {
-        width: 180px;
-        height: 180px;
+        order: -2;
+        margin-left: -1.2em;
+        width: 0px;
+        height: 0px;
     }
 
+    #heroRight {
+        order: -1;
+        width: 376px;
+        height: 150px;
+        margin-left: -1.5em;
+    }
+    .groupchat {
+        margin-left: .1em;
+    }
+
+    #makeButSmaller {
+        left: -60px;
+    }
 
     #footText1 {
         margin-left: 1em;
@@ -577,18 +738,85 @@ button {
     }
 }
 
+/*Mobile with minimum width of 200px maximum width of 340px*/
+@media only screen and (min-device-width: 200px) and (max-width: 359px) {
+    #scalar {
+        left: 105.72px;
+        top: 10.2px;
+    }
 
+    body {
+        margin-right: -3.5em;
+    }
+
+    #heroRight {
+        margin-left: -1em;
+        width: 350px;
+    }
+
+    #makeButSmaller {
+        left: -58px;
+    }
+
+    #footbutton {
+        margin-left: 9.2em;
+    }
+}
 
 /*Tablet Responsiveness*/
-@media only screen and (min-device-width: 601px) and (max-device-width: 860px) {
+@media only screen and (min-device-width: 601px) and (max-device-width: 930px) {
+/*From header*/
+
+    #scalar {
+        margin: 1em 0em;
+        position: relative;
+        width: 80px;
+        height: 24px;
+        left: 346.72px;
+        top: 10.2px;
+    }
+
     .imgmargin {
         max-width: 170px;
         max-height: 170px;
     }
+
+    #headerstyle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #heroRight {
+        order: -2;
+        width: 800px;
+        height: 185px;
+        margin-left: -1em;
+    }
+
+    #heroLeft {
+        order: -2;
+        width: 0px;
+        height: 0px;
+    }
+
+    .groupchat {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .headerp {
+        font-size: 16px;
+        line-height: 26px;
+    }
     
     #headerul {
-        position: relative;
-        left: -6%;
+        margin-left: 6.3em;
+    }
+
+    /*From Body to footer*/
+    .bodydif {
+        font-size: 16px;
     }
 
     .footText {
@@ -603,16 +831,26 @@ button {
     #footdiv {
         display: flex;
         flex-direction: column;
-        top: 20%;
+        top: 50%;
+        left: 1%;
     }
 
     #footText1 {
         margin: auto;
-        margin-bottom: .5em;
+        margin-bottom: 0em;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 44px;
+        position: absolute;
+        top: -60%;
+        bottom: 0%;
     }
     #footText2 {
         margin: auto;
-        margin-top: 0em;
+        margin: 1em 0em;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 0em 5em;
     }
 
     #footbutton {
@@ -621,11 +859,17 @@ button {
     }
 
     #container {
-        height: 19em;
+        left: 0px;
+        top: 1429.4px;
+        width: 968px;
+        height: 428px;
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .containerimg {
-        height: 19em;
+        height: 428px;
     }
 
     /*#footText2 {
@@ -635,4 +879,24 @@ button {
     /*#footbutton {
         margin-left: -5em;
     }*/
+}
+
+/*Device with max device width of 930px*/
+@media only screen and (min-width: 900px) and (max-device-width: 999px) {
+    #heroRight {
+        order: -2;
+        width: 930px;
+        height: 219px;
+        margin-left: -1.5em;
+    }
+
+    #headerul {
+        margin-left: 9em;
+        margin-top: 2em;
+    }
+
+    #container {
+        left: 0px;
+        top: 1500.4px;
+    }
 }
