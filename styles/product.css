@@ -434,7 +434,7 @@ button {
 }
 
 
-/*mobile with wider screen like surface pro*/
+/*mobile with wider screen like surface duo*/
 @media only screen and (min-width: 490px) and (max-device-width: 599px) {
     body {
         margin: 0em ;
@@ -485,12 +485,16 @@ button {
     }
 
     #footbutton {
-        margin-left: 10.7em;
+        margin-left: 11.2em;
     }
 
     #container {
-        top: 225.9%;
+        top: 230.9%;
         width: 535px;
+    }
+
+    #footdiv {
+        left: -2%;
     }
 }
 
@@ -529,8 +533,8 @@ button {
     }
 
     #container {
-        top: 121.9%;
-        width: 479px;
+        top: 259%;
+        width: 499px;
     }
 }
 
@@ -865,31 +869,82 @@ button {
         top: 10.2px;
     }
 
-    body {
-        margin-right: -4.5em;
+    #heroRight {
+        margin-left: 4em;
+        width: 360px;
     }
 
-    #heroRight {
-        margin-left: -1em;
-        width: 350px;
+    #headerul {
+        margin-left: -2.9em;
     }
 
     #makeButSmaller {
-        left: -3px;
+        left: -2.8px;
         top: 10.2px;
     }
 
-    #footbutton {
-        margin-left: 9.2em;
+    .numbers {
+        margin: auto;
+        margin-left: 9.4em;
+    }
+
+    #firstimgs {
+        margin-left: 5.5em;
+    }
+
+    .bodytext {
+        margin: auto;
+        padding: 0px;
+        padding-bottom: 90px;
+    }
+
+    #dif {
+        margin-left: -60px;
+        position: relative;
+        left: 25%;
+    }
+
+    .bodyh2 {
+        margin-left: -120px;
+        padding: 0px;
+        position: relative;
+        left: 37%;
+    }
+
+    .bodydif {
+        margin-left: -130px;
+        position: relative;
+        left: 37%;
+    }
+
+     #footbutton {
+        margin-left: 3.6em;
     }
 
     #firstDownload {
         margin-right: 10.5em;
     }
 
+    #footText1 {
+        margin-left: -100px;
+        position: relative;
+        left: 41%;
+    }
+
+    #footText2 {
+        margin-left: -100px;
+        position: relative;
+        left: 40%;
+    }
+
     #container {
-        top: 288.7%;
-        width: 580px;
+        left: 40px;
+        top: 265.7%;
+        width: 600px;
+    }
+
+    .containerimg {
+        width: 600px;
     }
 }
 
@@ -1041,7 +1096,7 @@ button {
     #heroRight {
         order: -2;
         width: 1300px;
-        height: 270px;
+        height: 370px;
         margin-left: -1.8em;
     }
 
@@ -1064,11 +1119,17 @@ button {
     
     #headerul {
         margin-left: 13em;
+        margin-bottom: 4em;
+    }
+
+    #imgmargin {
+        width: 164px;
+        height: 156px;
     }
 
     .numbers {
-        height: 48px;
-        width: 48px;
+        width: 56px;
+        height: 56px;
         font-size: 25px;
         margin: auto;
         box-shadow: 1px 1px 3px gray;
@@ -1077,30 +1138,17 @@ button {
     }
     
     .number12 {
+        text-align: center;
+        color: #87879D;
+        font-size: 26px;
+        line-height: 26px;
         margin: auto;
-        margin-left: .37em;
-        margin-top: -.27em;
     }
     
 
     /*Buttons*/
     button {
         font-size: 16px;
-    }
-
-    #firstDownload {
-        border-color: inherit;
-        width: 10em;
-        height: 3.5em;
-    }
-
-    .whatBut {
-        width: 9.5em;
-        height: 3.5em;
-    }
-
-    #makeButSmaller {
-        width: 8em;
     }
 
     /*From Body to footer*/
@@ -1157,8 +1205,8 @@ button {
 
     #container {
         left: 0px;
-        top: 1825.4px;
-        width: 1290px;
+        top: 2050px;
+        width: 1276px;
         height: 438px;
         position: absolute;
         max-width: 100%;
@@ -1186,6 +1234,18 @@ button {
         line-height: 26px;
     }
 
+    #heroRight {
+        order: -2;
+        width: 1029px;
+        height: 370px;
+        margin-left: -1.6em;
+    }
+
+    .imgmargin {
+        width: 164px;
+        height: 156px;
+    }
+
     #dif {
         font-size: 26px;
         font-weight: 22px;
@@ -1210,27 +1270,6 @@ button {
         line-height: 28px
     }
     
-    .numbers {
-        height: 28px;
-        width: 28px;
-        font-size: small;
-        margin: auto;
-        box-shadow: 1px 1px 3px gray;
-        top: 12px;
-        z-index: 1;
-    }
-    
-    .number12 {
-        margin: auto;
-        margin-left: .5em;
-        margin-top: -.2em;
-    }
-
-    #heroRight {
-        width: 1040px;
-        height: 270px;
-        margin-left: -1.8em;
-    }
 
     #headerul {
         margin-left: 9.5em;
@@ -1245,8 +1284,8 @@ button {
 
     #container {
         left: 0px;
-        top: 1659.4px;
-        width: 1290px;
+        top: 1839.4px;
+        width: 1021px;
         height: 438px;
         position: absolute;
         max-width: 100%;
